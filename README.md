@@ -11,3 +11,9 @@ Welcome to **Python Playground**, a personal repository to document my journey o
 - **Growth Tracker**: Watch my progress as I dive deeper into Python.
 
 ---
+
+## 🚀 Goals
+- Build a solid foundation in Python programming.
+- Work on real-world problems and projects.
+- Experiment with advanced concepts like OOP, file handling, and APIs.
+- Document my journey and progress.
