@@ -7,3 +7,5 @@ except ZeroDivisionError:
     print("Zero Division")
 except:
     print('Something strange has happened here... Sorry!')
+
+

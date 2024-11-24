@@ -17,6 +17,25 @@ def dic_test():
         for score in school_class[name]:
             print(name," ",score)
 
+def dic_test_2():
+    #Expected output 
+    # a
+    # b
+    # c
+    dictionary = {}
+    my_list = ['a', 'b', 'c', 'd']
+    
+    for i in range(len(my_list) - 1):
+        dictionary[my_list[i]] = (my_list[i], )
+
+
+    
+    for i in sorted(dictionary.keys()):
+        k = dictionary[i]
+        # Insert your code here.
+        print(k[0])
+
+
 
 d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
 d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
