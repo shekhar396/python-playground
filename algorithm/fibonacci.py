@@ -11,4 +11,11 @@ def fibonacci_calcolator(n):
         n1,n2=n2,sum
     return sum
 
-print(fibonacci_calcolator(9))
+def fibonacci_recursion(n):
+    if n<0:
+        return None
+    if n<3:
+        return 1
+    return fibonacci_recursion(n-1)+fibonacci_recursion(n-2)
+
+print(fibonacci_recursion(9))
