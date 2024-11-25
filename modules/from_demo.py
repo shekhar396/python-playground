@@ -1,4 +1,4 @@
-from math import pi,sin
+from math import pi,sin as m_sin
 pi = 3.14
 print(pi)
 
@@ -11,6 +11,6 @@ def sin(x):
 
 print(sin(pi/2))
 
-print(sin(pi / 2))
+print(m_sin(pi / 2))
 
 
