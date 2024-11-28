@@ -106,7 +106,7 @@ class List:
         c = a ^ b 
         
 
-        print(c)
+        print(rooms)
     
     
-# List.hotel_booking()
+List.hotel_booking()
