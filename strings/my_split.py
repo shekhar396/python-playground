@@ -25,3 +25,5 @@ print("To be or not to be,that is the question".split())
 print("   ".split())
 print(" abc ".split())
 print("".split())
+
+print('10'>'010')
