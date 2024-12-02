@@ -27,3 +27,6 @@ print(" abc ".split())
 print("".split())
 
 print('10'>'010')
+print('20' < '8')
+
+print(sorted(mysplit("To be or not to be, that is the question")))
