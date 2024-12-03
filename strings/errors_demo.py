@@ -7,4 +7,15 @@ except:
     print("This operation cannot be done.")
 
 print("THE END.")
+
+def bad_fun(n):
+    return 1 / n
+ 
+try:
+    bad_fun(0)
+except ArithmeticError:
+    print("What happened? An exception was raised!")
+ 
+print("THE END.")
+ 
     
