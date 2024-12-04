@@ -17,5 +17,12 @@ except ArithmeticError:
     print("What happened? An exception was raised!")
  
 print("THE END.")
- 
-    
+
+def bad_fun2(n):
+    try:
+        return 1/n
+    except ArithmeticError:
+        print("Error ----")
+
+bad_fun2(0)
+print("THE END.")
