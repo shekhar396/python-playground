@@ -1,24 +1,32 @@
 class Stack:
     def __init__(self):
-        self.__stack_list = []
-
+        self.__stk = []
 
     def push(self, val):
-        self.__stack_list.append(val)
-
+        self.__stk.append(val)
 
     def pop(self):
-        val = self.__stack_list[-1]
-        del self.__stack_list[-1]
+        val = self.__stk[-1]
+        del self.__stk[-1]
         return val
 
 
-stack_object = Stack()
+class CountingStack(Stack):
+    def __init__(self):
+        Stack.__init__(self)
+        self.__counter=0
+   
+    def get_counter(self):
+        return self.__counter
+    
 
-stack_object.push(3)
-stack_object.push(2)
-stack_object.push(1)
+    def pop(self):
+        self.__counter+=1
+        Stack.pop(self)
+	
 
-print(stack_object.pop())
-print(stack_object.pop())
-print(stack_object.pop())
+stk = CountingStack()
+for i in range(100):
+    stk.push(i)
+    stk.pop()
+print(stk.get_counter())
