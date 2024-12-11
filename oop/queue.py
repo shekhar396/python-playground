@@ -5,10 +5,8 @@ class QueueError(IndexError):
 class Queue:
     def __init__(self):
         self.queue = []
-
-    def put(self, elem):
-        self.queue.insert(0, elem)
-
+    def put(self,elem):
+        self.queue.insert(0,elem)
     def get(self):
         if len(self.queue) > 0:
             elem = self.queue[-1]
@@ -18,13 +16,18 @@ class Queue:
             raise QueueError
 
 
-que = Queue()
+class SuperQueue(Queue):
+    def isempty(self):
+        return len(self.queue) == 0
+
+
+que = SuperQueue()
 que.put(1)
 que.put("dog")
 que.put(False)
-try:
-    for i in range(4):
+for i in range(4):
+    if not que.isempty():
         print(que.get())
-except:
-    print("Queue error")
+    else:
+        print("Queue empty")
     
