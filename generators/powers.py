@@ -7,4 +7,7 @@ def powers_of_2(n):
  
 for v in powers_of_2(8):
     print(v)
+
+t = [x for x in powers_of_2(5)]
+print(t)
  
