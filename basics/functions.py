@@ -24,11 +24,14 @@ def days_in_month(year, month):
             return 28
     else:
         return 30
-
 def tuple_test():
+    global xyz
+    xyz=123
     t1=(1,)
     t2=(1,2,3,4.0)
     t3=t1+t2
     print(t1,' ',t2,' ',t3)
 tuple_test()
+
+print(xyz)
 
